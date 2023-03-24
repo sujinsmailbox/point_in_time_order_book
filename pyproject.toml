@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "order_book"
+version = "0.1.0"
+description = ""
+authors = ["sujinsmailbox <sujinsmailbox@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+pandasql = "^0.7.3"
+pyspark = "^3.3.2"
+mysql = "^0.0.3"
+mysql-connector-python = "^8.0.32"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

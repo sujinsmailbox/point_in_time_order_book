@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+    db:
+      image: mysql:latest
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: adminadmin
+        MYSQL_DATABASE: order
+        MYSQL_USER: user
+        MYSQL_PASSWORD: test
+      ports:
+        - "3306:3306"
+      volumes:
+        - /var/lib/mysql
+        - ./ddl:/docker-entrypoint-initdb.d
