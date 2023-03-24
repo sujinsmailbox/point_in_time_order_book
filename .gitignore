@@ -1,0 +1,7 @@
+/git
+*.workspace
+/.idea
+/logs
+/db-data
+.DS_Store
+poetry.lock
